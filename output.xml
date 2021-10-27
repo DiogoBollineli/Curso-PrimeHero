@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211026 22:15:25.902" rpa="false" schemaversion="2">
+<suite id="s1" name="Exercicios" source="C:\Users\diogo\OneDrive\Desktop\PrimeHero - Curso\tests\Exercicios.robot">
+<test id="s1-t1" name="Cenario: Imprimindo informações da pessoa">
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n ${PESSOA.nome}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211026 22:15:25.943" endtime="20211026 22:15:25.945"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${PESSOA.sobrenome}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211026 22:15:25.945" endtime="20211026 22:15:25.946"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${PESSOA.idade}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211026 22:15:25.947" endtime="20211026 22:15:25.948"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${PESSOA.cordepele}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211026 22:15:25.949" endtime="20211026 22:15:25.950"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${PESSOA.genêro}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211026 22:15:25.950" endtime="20211026 22:15:25.951"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${PESSOA.email}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211026 22:15:25.951" endtime="20211026 22:15:25.953"/>
+</kw>
+<status status="PASS" starttime="20211026 22:15:25.943" endtime="20211026 22:15:25.953"/>
+</test>
+<test id="s1-t2" name="Cenario: Imprimindo array de frutas">
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n ${FRUTAS[0]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211026 22:15:25.955" endtime="20211026 22:15:25.956"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${FRUTAS[1]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211026 22:15:25.956" endtime="20211026 22:15:25.957"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${FRUTAS[2]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211026 22:15:25.958" endtime="20211026 22:15:25.959"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${FRUTAS[3]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211026 22:15:25.959" endtime="20211026 22:15:25.960"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${FRUTAS[4]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211026 22:15:25.961" endtime="20211026 22:15:25.962"/>
+</kw>
+<tag>LISTA</tag>
+<status status="PASS" starttime="20211026 22:15:25.954" endtime="20211026 22:15:25.962"/>
+</test>
+<test id="s1-t3" name="Cenario: Somando dois valores">
+<kw name="Somar dois numeros">
+<arg>1423411</arg>
+<arg>10</arg>
+<kw name="Evaluate" library="BuiltIn">
+<var>${SOMA}</var>
+<arg>${NUM_A}+${NUM_B}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20211026 22:15:25.966" level="INFO">${SOMA} = 1423421</msg>
+<status status="PASS" starttime="20211026 22:15:25.965" endtime="20211026 22:15:25.966"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n${SOMA}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211026 22:15:25.966" endtime="20211026 22:15:25.967"/>
+</kw>
+<status status="PASS" starttime="20211026 22:15:25.965" endtime="20211026 22:15:25.967"/>
+</kw>
+<tag>SOMA</tag>
+<status status="PASS" starttime="20211026 22:15:25.964" endtime="20211026 22:15:25.967"/>
+</test>
+<test id="s1-t4" name="Cenario: Concatenar duas strings">
+<kw name="Concatenar duas palavras &quot;Olá mundo&quot; e &quot;Adeus mundo&quot;" sourcename="Concatenar duas palavras &quot;${WRD_A}&quot; e &quot;${WRD_B}&quot;">
+<kw name="Catenate" library="BuiltIn">
+<var>${GLUE}</var>
+<arg>${WRD_A} ${WRD_B}</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20211026 22:15:25.969" level="INFO">${GLUE} = Olá mundo Adeus mundo</msg>
+<status status="PASS" starttime="20211026 22:15:25.969" endtime="20211026 22:15:25.969"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n${GLUE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211026 22:15:25.970" endtime="20211026 22:15:25.970"/>
+</kw>
+<status status="PASS" starttime="20211026 22:15:25.969" endtime="20211026 22:15:25.970"/>
+</kw>
+<tag>CONC</tag>
+<status status="PASS" starttime="20211026 22:15:25.968" endtime="20211026 22:15:25.971"/>
+</test>
+<test id="s1-t5" name="Cenario: Criar email">
+<kw name="Cria e-mail">
+<arg>diogo</arg>
+<arg>bollineli</arg>
+<arg>18</arg>
+<kw name="Catenate" library="BuiltIn">
+<var>${E-MAIL}</var>
+<arg>${NAME}_${SBR}_${Age}@robot.com</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20211026 22:15:25.973" level="INFO">${E-MAIL} = diogo_bollineli_18@robot.com</msg>
+<status status="PASS" starttime="20211026 22:15:25.973" endtime="20211026 22:15:25.973"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n${E-MAIL}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211026 22:15:25.973" endtime="20211026 22:15:25.974"/>
+</kw>
+<status status="PASS" starttime="20211026 22:15:25.972" endtime="20211026 22:15:25.974"/>
+</kw>
+<tag>EMAIL</tag>
+<status status="PASS" starttime="20211026 22:15:25.972" endtime="20211026 22:15:25.975"/>
+</test>
+<test id="s1-t6" name="Cenario: Criar email separate">
+<kw name="Cria e-mail">
+<arg>diogo</arg>
+<arg>bollineli</arg>
+<arg>18</arg>
+<kw name="Catenate" library="BuiltIn">
+<var>${E-MAIL}</var>
+<arg>${NAME}_${SBR}_${Age}@robot.com</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20211026 22:15:25.977" level="INFO">${E-MAIL} = diogo_bollineli_18@robot.com</msg>
+<status status="PASS" starttime="20211026 22:15:25.977" endtime="20211026 22:15:25.977"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n${E-MAIL}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211026 22:15:25.977" endtime="20211026 22:15:25.978"/>
+</kw>
+<status status="PASS" starttime="20211026 22:15:25.976" endtime="20211026 22:15:25.978"/>
+</kw>
+<tag>EMAIL2</tag>
+<status status="PASS" starttime="20211026 22:15:25.976" endtime="20211026 22:15:25.978"/>
+</test>
+<test id="s1-t7" name="Cenario: Contar de 0 a 10">
+<kw name="Contar de 0 a 10">
+<for flavor="IN RANGE">
+<var>${COUNT}</var>
+<value>0</value>
+<value>11</value>
+<iter>
+<var name="${COUNT}">0</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número: ${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211026 22:15:25.981" endtime="20211026 22:15:25.982"/>
+</kw>
+<status status="PASS" starttime="20211026 22:15:25.981" endtime="20211026 22:15:25.982"/>
+</iter>
+<iter>
+<var name="${COUNT}">1</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número: ${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211026 22:15:25.982" endtime="20211026 22:15:25.983"/>
+</kw>
+<status status="PASS" starttime="20211026 22:15:25.982" endtime="20211026 22:15:25.983"/>
+</iter>
+<iter>
+<var name="${COUNT}">2</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número: ${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211026 22:15:25.983" endtime="20211026 22:15:25.984"/>
+</kw>
+<status status="PASS" starttime="20211026 22:15:25.983" endtime="20211026 22:15:25.984"/>
+</iter>
+<iter>
+<var name="${COUNT}">3</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número: ${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211026 22:15:25.984" endtime="20211026 22:15:25.984"/>
+</kw>
+<status status="PASS" starttime="20211026 22:15:25.984" endtime="20211026 22:15:25.984"/>
+</iter>
+<iter>
+<var name="${COUNT}">4</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número: ${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211026 22:15:25.985" endtime="20211026 22:15:25.985"/>
+</kw>
+<status status="PASS" starttime="20211026 22:15:25.985" endtime="20211026 22:15:25.985"/>
+</iter>
+<iter>
+<var name="${COUNT}">5</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número: ${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211026 22:15:25.985" endtime="20211026 22:15:25.986"/>
+</kw>
+<status status="PASS" starttime="20211026 22:15:25.985" endtime="20211026 22:15:25.986"/>
+</iter>
+<iter>
+<var name="${COUNT}">6</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número: ${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211026 22:15:25.986" endtime="20211026 22:15:25.987"/>
+</kw>
+<status status="PASS" starttime="20211026 22:15:25.986" endtime="20211026 22:15:25.987"/>
+</iter>
+<iter>
+<var name="${COUNT}">7</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número: ${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211026 22:15:25.987" endtime="20211026 22:15:25.987"/>
+</kw>
+<status status="PASS" starttime="20211026 22:15:25.987" endtime="20211026 22:15:25.987"/>
+</iter>
+<iter>
+<var name="${COUNT}">8</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número: ${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211026 22:15:25.988" endtime="20211026 22:15:25.988"/>
+</kw>
+<status status="PASS" starttime="20211026 22:15:25.987" endtime="20211026 22:15:25.988"/>
+</iter>
+<iter>
+<var name="${COUNT}">9</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número: ${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211026 22:15:25.989" endtime="20211026 22:15:25.989"/>
+</kw>
+<status status="PASS" starttime="20211026 22:15:25.988" endtime="20211026 22:15:25.989"/>
+</iter>
+<iter>
+<var name="${COUNT}">10</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no número: ${COUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211026 22:15:25.989" endtime="20211026 22:15:25.990"/>
+</kw>
+<status status="PASS" starttime="20211026 22:15:25.989" endtime="20211026 22:15:25.990"/>
+</iter>
+<status status="PASS" starttime="20211026 22:15:25.981" endtime="20211026 22:15:25.990"/>
+</for>
+<status status="PASS" starttime="20211026 22:15:25.980" endtime="20211026 22:15:25.990"/>
+</kw>
+<tag>CONTA</tag>
+<status status="PASS" starttime="20211026 22:15:25.979" endtime="20211026 22:15:25.990"/>
+</test>
+<test id="s1-t8" name="Cenario: Percorrer Lista de paises">
+<kw name="Percorrer paises">
+<kw name="Create List" library="BuiltIn">
+<var>@{PAISES}</var>
+<arg>Brasil</arg>
+<arg>Japão</arg>
+<arg>Canada</arg>
+<arg>Chile</arg>
+<arg>Argentina</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20211026 22:15:25.993" level="INFO">@{PAISES} = [ Brasil | Japão | Canada | Chile | Argentina ]</msg>
+<status status="PASS" starttime="20211026 22:15:25.992" endtime="20211026 22:15:25.993"/>
+</kw>
+<for flavor="IN">
+<var>${PAIS}</var>
+<value>@{PAISES}</value>
+<iter>
+<var name="${PAIS}">Brasil</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${PAIS}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211026 22:15:25.993" endtime="20211026 22:15:25.994"/>
+</kw>
+<status status="PASS" starttime="20211026 22:15:25.993" endtime="20211026 22:15:25.994"/>
+</iter>
+<iter>
+<var name="${PAIS}">Japão</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${PAIS}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211026 22:15:25.994" endtime="20211026 22:15:25.994"/>
+</kw>
+<status status="PASS" starttime="20211026 22:15:25.994" endtime="20211026 22:15:25.994"/>
+</iter>
+<iter>
+<var name="${PAIS}">Canada</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${PAIS}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211026 22:15:25.994" endtime="20211026 22:15:25.995"/>
+</kw>
+<status status="PASS" starttime="20211026 22:15:25.994" endtime="20211026 22:15:25.995"/>
+</iter>
+<iter>
+<var name="${PAIS}">Chile</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${PAIS}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211026 22:15:25.995" endtime="20211026 22:15:25.995"/>
+</kw>
+<status status="PASS" starttime="20211026 22:15:25.995" endtime="20211026 22:15:25.995"/>
+</iter>
+<iter>
+<var name="${PAIS}">Argentina</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${PAIS}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211026 22:15:25.996" endtime="20211026 22:15:25.996"/>
+</kw>
+<status status="PASS" starttime="20211026 22:15:25.996" endtime="20211026 22:15:25.996"/>
+</iter>
+<status status="PASS" starttime="20211026 22:15:25.993" endtime="20211026 22:15:25.996"/>
+</for>
+<status status="PASS" starttime="20211026 22:15:25.992" endtime="20211026 22:15:25.996"/>
+</kw>
+<tag>PAISES</tag>
+<status status="PASS" starttime="20211026 22:15:25.991" endtime="20211026 22:15:25.997"/>
+</test>
+<doc>Aqui estarão presentes todos os exercicios do curso Prime Heroes.
+É de boa prática manter todas as informações do projeto.</doc>
+<status status="PASS" starttime="20211026 22:15:25.904" endtime="20211026 22:15:25.999"/>
+</suite>
+<statistics>
+<total>
+<stat pass="8" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">CONC</stat>
+<stat pass="1" fail="0" skip="0">CONTA</stat>
+<stat pass="1" fail="0" skip="0">EMAIL</stat>
+<stat pass="1" fail="0" skip="0">EMAIL2</stat>
+<stat pass="1" fail="0" skip="0">LISTA</stat>
+<stat pass="1" fail="0" skip="0">PAISES</stat>
+<stat pass="1" fail="0" skip="0">SOMA</stat>
+</tag>
+<suite>
+<stat pass="8" fail="0" skip="0" id="s1" name="Exercicios">Exercicios</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
