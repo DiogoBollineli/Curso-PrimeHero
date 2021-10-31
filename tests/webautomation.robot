@@ -11,8 +11,8 @@ Test Teardown       Fechar Navegador
 ${URL}           http://automationpractice.com/index.php
 ${BROWSER}       chrome
 ${NOME}          Diogo
-${SOBRENOME}     Bollineli
-${EMAIL}         email_teste8@outlook.com
+${SOBRENOME}     Bollineli   
+${EMAIL}         email_testee12422@outlook.com      #NECESSARIO MUDAR O EMAIL A CADA TESTE
 
 ***Test Cases***
 
@@ -61,6 +61,7 @@ Caso de teste 04: Adicionar cliente
     Submeter cadastro
 
     Confere se o cadastro foi efetuado com sucesso
+    
 
 ***Keywords***
 
@@ -151,7 +152,7 @@ Submeter cadastro
 Confere se o cadastro foi efetuado com sucesso
     wait until element is visible       xpath=//*[@id="columns"]
     title should be                     My account - My Store
-    page should contain element         xpath=//*[@id="center_column"]                                  
+    page should contain element         xpath=//*[@id="center_column"]                           
 
     
 
