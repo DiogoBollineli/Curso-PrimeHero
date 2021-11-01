@@ -3,6 +3,8 @@ Documentation       Exercicio prático de automação para o curso Prime Heroes.
 
 Library     SeleniumLibrary
 
+Library     FakerLibrary
+
 Test Setup      Abrir Navegador
 
 Test Teardown       Fechar Navegador
@@ -11,8 +13,7 @@ Test Teardown       Fechar Navegador
 ${URL}           http://automationpractice.com/index.php
 ${BROWSER}       chrome
 ${NOME}          Diogo
-${SOBRENOME}     Bollineli   
-${EMAIL}         email_testee12422@outlook.com      #NECESSARIO MUDAR O EMAIL A CADA TESTE
+${SOBRENOME}     Bollineli         
 
 ***Test Cases***
 
@@ -64,6 +65,7 @@ Caso de teste 04: Adicionar cliente
     
 
 ***Keywords***
+
 
 Abrir navegador
     Open Browser                browser=${BROWSER}
@@ -120,6 +122,7 @@ Clicar em "Sign in"
 
 Informar um e-mail válido
 
+    ${EMAIL}                            FakerLibrary.Email
     wait until element is visible       id=columns
     input text                          id=email_create                                         ${EMAIL} 
 
